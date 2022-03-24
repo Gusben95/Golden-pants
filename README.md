@@ -36,19 +36,19 @@ https://www.figma.com/file/kXZaZLMYQzXzgC2k6o4ne0/AirBean-v.1.2---React?node-id=
   - Kassa
   - Varukorg
 
--Varukorg
+- Varukorg
   -
  
 - Dropdown (Hamburgarmeny) 
   - About
   - Orderstatus
 
-
 - Menylista
-  - 
+
 - Kassa
   - Ändra antal
   - Beställ 
   - Ta bort (Ändra) 
+  
 - About
 - 
