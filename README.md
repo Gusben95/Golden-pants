@@ -2,9 +2,13 @@
 Slutprojekt-Airbean i Webbramverk för javaskript.
 
 Engelska
+
 Varibler = camelCase
+
 Funktioner = lowercase
+
 Komponenter = Stor bokstav 
+
 Kommentera vad er kod gör.
 
 
