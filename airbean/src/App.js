@@ -1,11 +1,11 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Menu from "./Components/views/Menu";
-import About from "./Components/views/About";
-import Landing from "./Components/views/Landing";
-import Status from "./Components/views/Status";
+import Menu from "./views/Menu";
+import About from "./views/About";
+import Landing from "./views/Landing";
+import Status from "./views/Status";
 
-import Error from "./Components/views/Error";
+import Error from "./views/Error";
 
 function App() {
   return (
