@@ -1,9 +1,14 @@
+import { useDispatch } from "react-redux";
+import { addItemToOrder } from "../actions/orderactions";
+
 export default function Coffeeitem(props) {
+  const dispatch = useDispatch();
   let coffee = props.menuitem;
 
   function handleClick() {
     console.log("clicked");
     console.log(coffee);
+    dispatch(addItemToOrder(coffee));
   }
 
   console.log(coffee);
