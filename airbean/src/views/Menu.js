@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Coffeeitem from "../Components/Coffeeitem";
+import Shopingcart from "../Components/Shopingcart";
 export default function Menu() {
   //  fetching menu, saving menu(data) to a state in useeffect, because I want to render it once before displaying  teh menu
 
@@ -24,6 +25,8 @@ export default function Menu() {
         menu.map((menuItem) => {
           return <Coffeeitem menuitem={menuItem} key={menuItem.id} />;
         })}
+
+      <Shopingcart />
     </section>
   );
 }

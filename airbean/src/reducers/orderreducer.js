@@ -4,6 +4,7 @@ const initialState = {
 const orderreducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_ITEM":
+      console.log(state);
       return {
         ...state,
         order: [...state.order, action.payload],
