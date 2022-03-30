@@ -12,21 +12,32 @@ export default function Menu() {
       );
 
       const data = await response.json();
+      data.forEach(element => {
+        element.amount = 0;
+      });
       console.log(data);
       setMenu(data);
     };
     fetchmenu();
   }, []);
 
+  console.log(menu);
+
   return (
-    <section>
-      <h1>This is where the menu will be</h1>
+    <section className="Menu--section">
+      <h1 className="menu--title">This is where the menu will be</h1>
       {menu &&
         menu.map((menuItem) => {
-          return <Coffeeitem menuitem={menuItem} key={menuItem.id} />;
+          return (
+            <Coffeeitem
+              menuitem={menuItem}
+              key={menuItem.id}
+              className="coffeeItem"
+            />
+          );
         })}
 
-      <Shopingcart />
+      <Shopingcart className="shopingcart--section" />
     </section>
   );
 }
