@@ -5,10 +5,12 @@ const addItemToOrder = (item) => {
     payload: item,
   };
 };
-const increment = (data) => {
+const increment = (item) => {
+  console.log("hshshs");
+  console.log(item.item);
   return {
     type: "INCREMENT",
-    payload: data,
+    payload: item,
   };
 };
 

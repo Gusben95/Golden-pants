@@ -2,6 +2,11 @@ body {
   color: rgb(247, 201, 208);
 }
 
+.ha {
+  position: absolute;
+  bottom: 0;
+}
+
 .App {
   text-align: center;
 }
