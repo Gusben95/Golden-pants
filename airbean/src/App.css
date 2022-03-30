@@ -1,3 +1,7 @@
+body {
+  color: rgb(247, 201, 208);
+}
+
 .App {
   text-align: center;
 }
@@ -6,6 +10,7 @@
   height: 40vmin;
   pointer-events: none;
 }
+
 .Menu--section {
   background-color: aqua;
   display: flex;
@@ -24,6 +29,14 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.landing-body {
+  background-color: rgb(10, 122, 47);
+}
+
+.status-body {
+  background-color: rgb(248, 69, 69);
 }
 
 .App-header {
@@ -54,4 +67,11 @@
   background-color: rgb(41, 44, 44);
   border-radius: 4px;
   padding: 5px;
+}
+
+.btn2 {
+  background-color: rgb(221, 230, 230);
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
 }
