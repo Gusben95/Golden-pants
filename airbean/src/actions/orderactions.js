@@ -5,5 +5,18 @@ const addItemToOrder = (item) => {
     payload: item,
   };
 };
+const increment = (data) => {
+  return {
+    type: "INCREMENT",
+    payload: data,
+  };
+};
 
-export { addItemToOrder };
+const decrement = (data) => {
+  return {
+    type: "DECREMENT",
+    payload: data,
+  };
+};
+
+export { addItemToOrder, increment, decrement };
