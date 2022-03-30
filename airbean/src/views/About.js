@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section>
       <header>
-        <img src="assets/graphics/graphics-header.svg" alt="header" />
+        <img src="airbean/public/graphics/graphics-header.svg" alt="header" />
       </header>
 
       <h1>Vårt kaffe</h1>
@@ -38,13 +38,13 @@ export default function About() {
       </p>
 
       <div className="owner">
-        <img src="assets/graphics/eva-cortado.jpg" alt="Owner of Company" />
+        <img src="airbean/public/graphics/eva-cortado.jpg" alt="Owner of Company" />
         <h3>Eva Cortado</h3>
         <p>VD & Grundare</p>
       </div>
 
       <header>
-        <img src="assets/graphics/graphics-footer.svg" alt="footer" />
+        <img src="airbean/public/graphics/graphics-footer.svg" alt="footer" />
       </header>
     </section>
   );
