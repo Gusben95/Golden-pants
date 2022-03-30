@@ -2,6 +2,66 @@
 /* font-family: 'PT Serif', serif;
 font-family: 'Work Sans', sans-serif; */
 
+/* Header / NAVBAR  */
+.navbar--section {
+  background-image: url("../public/graphics/graphics-header.svg");
+  padding-top: 10px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-width: 100%;
+  background-size: cover;
+}
+
+.open {
+  display: block;
+  position: relative;
+  background-color: #282c34;
+  height: 100vh;
+  min-width: 30px;
+}
+.closed {
+  display: none;
+}
+
+.navCon {
+  padding: 10px;
+}
+.openBurger {
+  background-image: url("../public/graphics/navicon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  justify-items: center;
+  width: 60%;
+  height: 50%;
+  margin: 10px;
+  position: absolute;
+}
+.closedBurger {
+  background-image: url("../public/graphics/close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 60%;
+  margin: 10px;
+  position: absolute;
+}
+
+.navIcon img {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+.navIcon {
+  position: relative;
+  top: 50%;
+  left: 5%;
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
 .App {
   text-align: center;
   font-family: "PT Serif", serif;
