@@ -2,7 +2,7 @@
 // import Menu from "../views/Menu";
 
 const initialState = {
-  order: [{}, {}],
+  order: [],
 };
 
 const orderreducer = (state = initialState, action) => {
@@ -25,7 +25,7 @@ const orderreducer = (state = initialState, action) => {
       console.log(a);
       return {
         ...state.order,
-        order: [...state.order, a],
+        order: [...state.order],
       };
     case "DECREMENT":
       return {
