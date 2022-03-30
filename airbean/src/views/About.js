@@ -2,7 +2,9 @@ export default function About() {
   return (
     <section>
 
-      <header> </header>
+      <header> 
+        <img src="assets/graphics/graphics-header.svg"/>
+      </header>
 
       <h1>Vårt kaffe</h1>
 
@@ -19,7 +21,7 @@ export default function About() {
       </div>
 
       <header>
-
+        <img src="assets/graphics/graphics-footer.svg"/>
       </header>
     </section>
   );
