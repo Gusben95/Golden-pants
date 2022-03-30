@@ -6,6 +6,19 @@
   height: 40vmin;
   pointer-events: none;
 }
+.Menu--section {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+}
+
+.coffee--section {
+  background-color: orange;
+}
+
+.coffee--title {
+  color: hotpink;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

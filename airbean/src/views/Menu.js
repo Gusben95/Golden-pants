@@ -18,15 +18,23 @@ export default function Menu() {
     fetchmenu();
   }, []);
 
+  console.log(menu);
+
   return (
-    <section>
-      <h1>This is where the menu will be</h1>
+    <section className="Menu--section">
+      <h1 className="menu--title">This is where the menu will be</h1>
       {menu &&
         menu.map((menuItem) => {
-          return <Coffeeitem menuitem={menuItem} key={menuItem.id} />;
+          return (
+            <Coffeeitem
+              menuitem={menuItem}
+              key={menuItem.id}
+              className="coffeeItem"
+            />
+          );
         })}
 
-      <Shopingcart />
+      <Shopingcart className="shopingcart--section" />
     </section>
   );
 }

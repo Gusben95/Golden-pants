@@ -13,14 +13,14 @@ export default function Coffeeitem(props) {
 
   console.log(coffee);
   return (
-    <article>
+    <article className="coffee--section">
       <button className="btn" onClick={handleClick}>
         <img src="/graphics/add.svg" alt="add" height="20px" />
       </button>
-      <p>{coffee.id}</p>
-      <h1>{coffee.title}</h1>
-      <h2>{coffee.desc}</h2>
-      <h3>{coffee.price} kr</h3>
+      <p className="coffee--id">{coffee.id}</p>
+      <h1 className="coffee--title">{coffee.title}</h1>
+      <h2 className="coffee--desc">{coffee.desc}</h2>
+      <h3 className="coffee-price">{coffee.price} kr</h3>
     </article>
   );
 }
