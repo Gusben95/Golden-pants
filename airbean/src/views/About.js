@@ -12,7 +12,7 @@ export default function About() {
 
 
 
-      <div class="owner">
+      <div className="owner">
           <img src="assets/graphics/eva-cortado.jpg" alt="Owner of Company"/>
           <h3>Eva Cortado</h3>
           <p>VD & Grundare</p>
