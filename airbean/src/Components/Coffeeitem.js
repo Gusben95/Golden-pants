@@ -24,7 +24,10 @@ export default function Coffeeitem(props) {
       </button>
 
       <section className="coffee_title_desc--section">
-        <h2 className="coffee--title">{coffee.title}</h2>
+        <section className="coffee_title_dots--section">
+          <h2 className="coffee--title">{coffee.title}</h2>
+          <div className="dots"></div>
+        </section>
         <h2 className="coffee--desc text-small">{coffee.desc}</h2>
       </section>
       <h3 className="coffee--price">{coffee.price} kr</h3>

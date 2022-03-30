@@ -22,7 +22,7 @@ export default function Menu() {
 
   return (
     <section className="Menu--section">
-      <h1 className="menu--title">This is where the menu will be</h1>
+      <h1 className="menu--title">Menu</h1>
       {menu &&
         menu.map((menuItem) => {
           return (

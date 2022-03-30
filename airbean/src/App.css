@@ -20,31 +20,47 @@ font-family: 'Work Sans', sans-serif; */
 /* COFFEE MENU */
 .Menu--section {
   padding: 20px;
+  max-width: 100%;
+  min-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .coffee--section {
-  background-color: rgb(253, 205, 183);
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.coffee--title {
-  color: rgb(0, 0, 0);
-}
-
-.coffee--price {
-  color: rgb(3, 3, 3);
-}
-.coffee_title_desc--section {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
-  max-width: 60%;
 }
+
+.coffee--title,
+.coffee--price {
+  color: rgb(0, 0, 0);
+  margin-top: 25px;
+}
+.coffee--title {
+  min-width: 300px;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 10px;
+
+  line-height: 70%;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+.dots {
+  border-bottom: dotted rgba(0, 0, 0, 0.315) 0.5px;
+  margin: 0px;
+  padding: 0px;
+}
+
 .btn {
-  height: 50%;
+  max-height: 50%;
+  max-width: 50px;
   align-self: center;
   border-radius: 50%;
   background-color: rgb(24, 11, 11);
