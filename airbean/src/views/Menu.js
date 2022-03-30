@@ -12,6 +12,9 @@ export default function Menu() {
       );
 
       const data = await response.json();
+      data.forEach(element => {
+        element.amount = 0;
+      });
       console.log(data);
       setMenu(data);
     };
