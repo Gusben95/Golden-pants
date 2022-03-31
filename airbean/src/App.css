@@ -264,15 +264,3 @@ font-family: 'Work Sans', sans-serif; */
   }
 }
 
-.btn {
-  background-color: rgb(41, 44, 44);
-  border-radius: 4px;
-  padding: 5px;
-}
-
-.btn2 {
-  background-color: rgb(221, 230, 230);
-  border-radius: 4px;
-  padding: 5px;
-  color: white;
-}
