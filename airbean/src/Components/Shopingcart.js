@@ -9,7 +9,7 @@ export default function Cart() {
     return <CartList item={item} key={index} />;
   });
   return (
-    <section>
+    <section className="ha">
       <h1>CART CART CART</h1>
       {displayOrder}
     </section>

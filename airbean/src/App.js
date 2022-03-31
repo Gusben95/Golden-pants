@@ -6,10 +6,12 @@ import Landing from "./views/Landing";
 import Status from "./views/Status";
 
 import Error from "./views/Error";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Menu />}></Route>
         <Route path="/about" element={<About />}></Route>

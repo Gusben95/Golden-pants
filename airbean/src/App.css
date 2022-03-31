@@ -2,8 +2,82 @@ body {
   color: rgb(247, 201, 208);
 }
 
+.ha {
+  position: absolute;
+  bottom: 0;
+}
+/* FONT WE ARE USING! */
+/* font-family: 'PT Serif', serif;
+font-family: 'Work Sans', sans-serif; */
+
+/* Header / NAVBAR  */
+.navbar--section {
+  background-image: url("../public/graphics/graphics-header.svg");
+  padding-top: 10px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-width: 100%;
+  background-size: cover;
+}
+
+.open {
+  display: block;
+  position: relative;
+  background-color: #282c34;
+  height: 100vh;
+  min-width: 30px;
+}
+.closed {
+  display: none;
+}
+
+.navCon {
+  padding: 10px;
+}
+.openBurger {
+  background-image: url("../public/graphics/navicon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  justify-items: center;
+  width: 60%;
+  height: 50%;
+  margin: 10px;
+  position: absolute;
+}
+.closedBurger {
+  background-image: url("../public/graphics/close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 60%;
+  margin: 10px;
+  position: absolute;
+}
+
+.navIcon img {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+.navIcon {
+  position: relative;
+  top: 50%;
+  left: 5%;
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
 .App {
   text-align: center;
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+}
+.text-small {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
 }
 
 .App-logo {
@@ -11,18 +85,55 @@ body {
   pointer-events: none;
 }
 
+/* COFFEE MENU */
 .Menu--section {
-  background-color: aqua;
-  display: flex;
-  flex-direction: row;
+  padding: 20px;
+  max-width: 100%;
+  min-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .coffee--section {
-  background-color: orange;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
+.coffee--title,
+.coffee--price {
+  color: rgb(0, 0, 0);
+  margin-top: 25px;
+}
 .coffee--title {
-  color: hotpink;
+  min-width: 300px;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 10px;
+
+  line-height: 70%;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+.dots {
+  border-bottom: dotted rgba(0, 0, 0, 0.315) 0.5px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn {
+  max-height: 50%;
+  max-width: 50px;
+  align-self: center;
+  border-radius: 50%;
+  background-color: rgb(24, 11, 11);
+  border: none;
+  padding: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
