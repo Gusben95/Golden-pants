@@ -2,7 +2,7 @@ export default function Landing() {
   return (
     <section>
 
-      <img src="airbean/public/graphics/airbean-landing.svg"/>
+      <img src="airbean/public/graphics/airbean-landing.svg" alt="landing"/>
       <h1>AIR BEAN</h1>
       
       <h3>DRONEDELIVERED COFFEE</h3>
