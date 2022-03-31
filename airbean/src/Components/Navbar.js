@@ -1,10 +1,15 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import NavList from "./NavList";
+import Shopingcart from "./Shopingcart";
 export default function Navbar() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
+  };
+  const toggleCart = () => {
+    setCartOpen(!cartOpen);
   };
 
   return (
@@ -14,34 +19,21 @@ export default function Navbar() {
           <div className={hamburgerOpen ? "openBurger" : "closedBurger"}> </div>
         </div>
       </div>
-      <div className="cart">
+      <div className="cart" onClick={toggleCart}>
         <section className="cartAmount--section">
           <p>0</p>
         </section>
-
         <figure className="bag--figure">
           <img src="/graphics/bag.svg" alt="nav" />
         </figure>
       </div>
-      <section className={hamburgerOpen ? "open" : "closed"}>
-        <ul>
-          <li>
-            <Link to={"/"} onClick={toggleHamburger}>
-              Menu
-            </Link>
-          </li>
-          <li>
-            {/* callking in toggle because we want to close it  after we clicked on a new route */}
-            <Link to={"/about"} onClick={toggleHamburger}>
-              Vårt Kaffe
-            </Link>
-          </li>
-          <li>
-            <Link to={"/status"} onClick={toggleHamburger}>
-              Orderstatus
-            </Link>
-          </li>
-        </ul>
+      <Shopingcart className={cartOpen ? "open cart" : "closed cart"} />
+
+      <section className={hamburgerOpen ? "open nav" : "closed nav"}>
+        <NavList
+          setHamburgerOpen={setHamburgerOpen}
+          hamburgerOpen={hamburgerOpen}
+        />
       </section>
     </section>
   );

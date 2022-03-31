@@ -2,15 +2,43 @@ body {
   color: rgb(247, 201, 208);
 }
 
-.ha {
-  position: absolute;
-  bottom: 0;
-}
 /* FONT WE ARE USING! */
 /* font-family: 'PT Serif', serif;
 font-family: 'Work Sans', sans-serif; */
 
 /* Header / NAVBAR  */
+.cart {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #060606;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  margin-top: 20px;
+}
+.cart img {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.cartAmount--section {
+  position: absolute;
+  top: -30%;
+  left: 60%;
+  background-color: red;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.cartAmount--section p {
+  margin: 3px;
+  font-weight: bold;
+}
+
 .navbar--section {
   background-image: url("../public/graphics/graphics-header.svg");
   padding-top: 10px;
@@ -18,11 +46,14 @@ font-family: 'Work Sans', sans-serif; */
   background-size: auto;
   min-width: 100%;
   background-size: cover;
+  z-index: 0;
 }
 
 .open {
   display: block;
-  position: relative;
+  position: absolute;
+  top: 0;
+  width: 100vw;
   background-color: #282c34;
   height: 100vh;
   min-width: 30px;
@@ -31,11 +62,18 @@ font-family: 'Work Sans', sans-serif; */
   display: none;
 }
 
+.nav {
+  z-index: 2;
+}
+
+.navIcon {
+  z-index: 3;
+}
+
 .navCon {
   padding: 10px;
 }
 .openBurger {
-  background-image: url("../public/graphics/navicon.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
@@ -43,10 +81,11 @@ font-family: 'Work Sans', sans-serif; */
   width: 60%;
   height: 50%;
   margin: 10px;
+  background-image: url("../public/graphics/close.svg");
   position: absolute;
 }
 .closedBurger {
-  background-image: url("../public/graphics/close.svg");
+  background-image: url("../public/graphics/navicon.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 60%;

@@ -8,10 +8,5 @@ export default function Cart() {
   let displayOrder = order?.map((item, index) => {
     return <CartList item={item} key={index} />;
   });
-  return (
-    <section className="ha">
-      <h1>CART CART CART</h1>
-      {displayOrder}
-    </section>
-  );
+  return <section className="ha">{displayOrder}jajaka</section>;
 }

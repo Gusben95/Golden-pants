@@ -2,12 +2,12 @@ import { useDispatch } from "react-redux";
 import { increment, decrement } from "../actions/orderactions";
 export default function CartList(props) {
   const dispatch = useDispatch();
-  console.log(props.item);
+  // console.log(props.item);
   const obj = {
     item: props.item,
     value: 1,
   };
-  console.log(props);
+  // console.log(props);
   function handleplus() {
     dispatch(increment(obj));
 
