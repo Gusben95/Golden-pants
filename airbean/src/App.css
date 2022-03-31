@@ -1,5 +1,6 @@
 body {
-  color: rgb(247, 201, 208);
+  background-color: rgb(247, 201, 208);
+  color: black;
 }
 
 /* FONT WE ARE USING! */
@@ -11,11 +12,12 @@ font-family: 'Work Sans', sans-serif; */
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #060606;
+  background-color: #000000;
   position: absolute;
   top: 0;
   right: 5%;
   margin-top: 20px;
+  z-index: 2;
 }
 .cart img {
   position: absolute;
@@ -32,6 +34,7 @@ font-family: 'Work Sans', sans-serif; */
   width: 30px;
   text-align: center;
   border-radius: 50%;
+  color: white;
 }
 
 .cartAmount--section p {
@@ -47,6 +50,26 @@ font-family: 'Work Sans', sans-serif; */
   min-width: 100%;
   background-size: cover;
   z-index: 0;
+}
+
+.cart--section {
+  background-color: rgba(255, 255, 255, 0.921);
+  height: 100%;
+}
+
+.cartOpen {
+  padding: 20px;
+  z-index: 3;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  background-color: #121313d3;
+  height: 100vh;
+  min-width: 30px;
+}
+.cartClosed {
+  display: none;
 }
 
 .open {

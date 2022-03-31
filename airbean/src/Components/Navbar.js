@@ -27,7 +27,9 @@ export default function Navbar() {
           <img src="/graphics/bag.svg" alt="nav" />
         </figure>
       </div>
-      <Shopingcart className={cartOpen ? "open cart" : "closed cart"} />
+      <section className={cartOpen ? "cartOpen" : "cartClosed"}>
+        <Shopingcart setCartOpen={setCartOpen} cartOpen={cartOpen} />
+      </section>
 
       <section className={hamburgerOpen ? "open nav" : "closed nav"}>
         <NavList
