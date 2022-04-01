@@ -243,3 +243,19 @@ font-family: 'Work Sans', sans-serif; */
     transform: rotate(360deg);
   }
 }
+
+/* About */
+
+.container img {
+  width: 100%;
+}
+
+.paragraphs {
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: left;
+}
+
+.brodtxt {
+  font-weight: bold;
+}
