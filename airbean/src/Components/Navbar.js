@@ -17,6 +17,7 @@ export default function Navbar({ navlist, shopingcart }) {
   return (
     <section className="navbar--section">
       <div className="nav-con">
+        {/*  if navlist is set to true then display icon/button */}
         {navlist && (
           <div className="navIcon" onClick={toggleHamburger}>
             <div
@@ -25,6 +26,7 @@ export default function Navbar({ navlist, shopingcart }) {
           </div>
         )}
       </div>
+      {/*  if navlist is set to true then display icon/button */}
 
       {shopingcart && (
         <div className="cart" onClick={toggleCart}>
