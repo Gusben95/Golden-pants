@@ -6,8 +6,8 @@ export default function About() {
       <Navbar navlist={true} shopingcart={false} />
       <h1>Vårt kaffe</h1>
 
-      <div class="paragraphs">
-        <p class="brodtxt">
+      <div className="paragraphs">
+        <p className="brodtxt">
           Lorem ipsum dolor sit amet, sed fermentum augue faucibus nec. Donec
           pellentesque lobortis fermentum. Cras feugiat sem nec mi fringilla,
           sit amet rhoncus purus varius. Vestibulum a convallis massa, vel
@@ -40,14 +40,14 @@ export default function About() {
         </p>
       </div>
 
-      <div class="owner">
+      <div className="owner">
         <img src="/graphics/eva-cortado.jpg" alt="Owner of Company" />
         <h3>Eva Cortado</h3>
         <p>VD & Grundare</p>
       </div>
 
       <footer>
-        <div class="container">
+        <div className="container">
           <img src="/graphics/graphics-footer.svg" alt="footer" />
         </div>
       </footer>
