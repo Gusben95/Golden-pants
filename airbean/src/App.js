@@ -12,7 +12,7 @@ import Error from "./views/Error";
 function App() {
   return (
     <div className="App">
-      
+      <Navbar navlist={true} shopingcart={false} />
       <Routes>
         <Route path="/" element={<Menu />}></Route>
         <Route path="/about" element={<About />}></Route>

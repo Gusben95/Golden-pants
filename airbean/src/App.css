@@ -186,35 +186,14 @@ font-family: 'Work Sans', sans-serif; */
 }
 
 .coffee--section {
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  grid-template-rows: 1fr;
 }
-
-.coffee--title,
-.coffee--price {
-  color: rgb(0, 0, 0);
-  margin-top: 25px;
-}
-.coffee--title {
-  min-width: 300px;
-  text-align: left;
-  margin-bottom: 0px;
-  margin-top: 10px;
-
-  line-height: 70%;
-  padding-bottom: 0px;
-  padding-top: 20px;
-}
-
-.dots {
-  border-bottom: dotted rgba(0, 0, 0, 0.315) 0.5px;
-  margin: 0px;
-  padding: 0px;
+.coffee_title_desc--section {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 }
 
 .btn {
@@ -275,7 +254,6 @@ font-family: 'Work Sans', sans-serif; */
   padding-left: 25px;
   padding-right: 25px;
   text-align: left;
-  
 }
 
 .brodtxt {
