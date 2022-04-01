@@ -38,7 +38,10 @@ export default function About() {
       </p>
 
       <div className="owner">
-        <img src="airbean/public/graphics/eva-cortado.jpg" alt="Owner of Company" />
+        <img
+          src="airbean/public/graphics/eva-cortado.jpg"
+          alt="Owner of Company"
+        />
         <h3>Eva Cortado</h3>
         <p>VD & Grundare</p>
       </div>

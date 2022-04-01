@@ -11,7 +11,7 @@ import Navbar from "./Components/Navbar";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar navlist={true} shopingcart={false} />
       <Routes>
         <Route path="/" element={<Menu />}></Route>
         <Route path="/about" element={<About />}></Route>
