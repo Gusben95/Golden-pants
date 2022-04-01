@@ -75,6 +75,7 @@ font-family: 'Work Sans', sans-serif; */
   min-width: 100%;
   background-size: cover;
   z-index: 0;
+  padding-bottom: 100px;
 }
 
 .cart--section {

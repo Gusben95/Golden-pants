@@ -1,7 +1,9 @@
+import Navbar from "../Components/Navbar";
+
 export default function About() {
   return (
     <section>
-    
+    <Navbar navlist={true} shopingcart={false} />
       <h1>Vårt kaffe</h1>
 
         <div class="paragraphs">
