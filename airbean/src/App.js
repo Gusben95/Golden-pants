@@ -4,9 +4,10 @@ import Menu from "./views/Menu";
 import About from "./views/About";
 import Landing from "./views/Landing";
 import Status from "./views/Status";
+import Navbar from "./Components/Navbar";
 
 import Error from "./views/Error";
-import Navbar from "./Components/Navbar";
+
 
 function App() {
   return (
