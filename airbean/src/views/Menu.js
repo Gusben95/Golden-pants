@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Coffeeitem from "../Components/Coffeeitem";
+import Navbar from "../Components/Navbar";
 
 export default function Menu() {
   //  fetching menu, saving menu(data) to a state in useeffect, because I want to render it once before displaying  teh menu
@@ -25,6 +26,7 @@ export default function Menu() {
 
   return (
     <section className="Menu--section">
+      <Navbar navlist={true} shopingcart={true} />;
       <h1 className="menu--title">Menu</h1>
       {menu &&
         menu.map((menuItem) => {
@@ -39,4 +41,3 @@ export default function Menu() {
     </section>
   );
 }
-
