@@ -1,24 +1,17 @@
-const addItemToOrder = (item) => {
-  console.log(item);
-  return {
-    type: "ADD_ITEM",
-    payload: item,
-  };
-};
 const increment = (item) => {
   console.log("hshshs");
-  console.log(item.item);
+  console.log(item);
   return {
     type: "INCREMENT",
     payload: item,
   };
 };
 
-const decrement = (data) => {
+const decrement = (item) => {
   return {
     type: "DECREMENT",
-    payload: data,
+    payload: item,
   };
 };
 
-export { addItemToOrder, increment, decrement };
+export { increment, decrement };
