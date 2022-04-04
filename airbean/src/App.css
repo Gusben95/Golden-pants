@@ -93,6 +93,8 @@
   line-height: 100%;
   display: flex;
   align-items: flex-end;
+  font-size: 1.3em;
+  text-align: left;
 }
 
 .coffee--desc {
@@ -102,6 +104,7 @@
   margin: 0;
   padding-left: 5px;
   font-weight: lighter;
+  text-align: left;
 }
 
 /* COFFEE MENU */
@@ -335,7 +338,7 @@
 }
 
 body {
-  background-color: rgb(247, 201, 208);
+  background-color: #f3e4e1;
   color: black;
 }
 
