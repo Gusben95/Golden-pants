@@ -3,7 +3,7 @@ import Coffeeitem from "../Components/Coffeeitem";
 import Navbar from "../Components/Navbar";
 
 export default function Menu() {
-  //  fetching menu, saving menu(data) to a state in useeffect, because I want to render it once before displaying  teh menu
+  //  fetching menu, saving menu(data) to a state in useeffect, because I want to render it once before displaying  the menu
 
   const [menu, setMenu] = useState(null);
   useEffect(() => {
