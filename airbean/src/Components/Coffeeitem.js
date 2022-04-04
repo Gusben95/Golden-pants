@@ -15,12 +15,22 @@ export default function Coffeeitem(props) {
   return (
     <article className="coffee--section">
       <button className="btn" onClick={handleClick}>
-        <img src="/graphics/add.svg" alt="add" height="20px" />
+        <img
+          src="/graphics/add.svg"
+          alt="add"
+          width="20px"
+          className="addImg"
+        />
       </button>
-      <p className="coffee--id">{coffee.id}</p>
-      <h1 className="coffee--title">{coffee.title}</h1>
-      <h2 className="coffee--desc">{coffee.desc}</h2>
-      <h3 className="coffee-price">{coffee.price} kr</h3>
+
+      <section className="coffee_title_desc--section">
+        <section className="coffee_title_dots--section">
+          <h2 className="coffee--title">{coffee.title}</h2>
+          <section className="dots"></section>
+        </section>
+        <h2 className="coffee--desc text-small">{coffee.desc}</h2>
+      </section>
+      <h3 className="coffee--price">{coffee.price} kr</h3>
     </article>
   );
 }

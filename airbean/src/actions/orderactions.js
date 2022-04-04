@@ -5,5 +5,20 @@ const addItemToOrder = (item) => {
     payload: item,
   };
 };
+const increment = (item) => {
+  console.log("hshshs");
+  console.log(item.item);
+  return {
+    type: "INCREMENT",
+    payload: item,
+  };
+};
 
-export { addItemToOrder };
+const decrement = (data) => {
+  return {
+    type: "DECREMENT",
+    payload: data,
+  };
+};
+
+export { addItemToOrder, increment, decrement };

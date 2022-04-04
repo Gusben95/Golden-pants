@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Coffeeitem from "../Components/Coffeeitem";
-import Shopingcart from "../Components/Shopingcart";
+import Navbar from "../Components/Navbar";
+
 export default function Menu() {
-  //  fetching menu, saving menu(data) to a state in useeffect, because I want to render it once before displaying  teh menu
+  //  fetching menu, saving menu(data) to a state in useeffect, because I want to render it once before displaying  the menu
 
   const [menu, setMenu] = useState(null);
   useEffect(() => {
@@ -12,8 +13,8 @@ export default function Menu() {
       );
 
       const data = await response.json();
-      data.forEach(element => {
-        element.amount = 0;
+      data.forEach((element) => {
+        element.amount = 1;
       });
       console.log(data);
       setMenu(data);
@@ -25,7 +26,8 @@ export default function Menu() {
 
   return (
     <section className="Menu--section">
-      <h1 className="menu--title">This is where the menu will be</h1>
+      <Navbar navlist={true} shopingcart={true} />;
+      <h1 className="menu--title">Menu</h1>
       {menu &&
         menu.map((menuItem) => {
           return (
@@ -36,8 +38,6 @@ export default function Menu() {
             />
           );
         })}
-
-      <Shopingcart className="shopingcart--section" />
     </section>
   );
 }
