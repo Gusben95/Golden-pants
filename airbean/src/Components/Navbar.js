@@ -6,6 +6,7 @@ export default function Navbar({ navlist, shopingcart }) {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   console.log(shopingcart);
+  const [amount, setAmount] = useState(0);
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
@@ -31,7 +32,7 @@ export default function Navbar({ navlist, shopingcart }) {
       {shopingcart && (
         <div className="cart" onClick={toggleCart}>
           <section className="cartAmount--section">
-            <p>0</p>
+            <p>{amount ? amount : 0}</p>
           </section>
           <figure className="bag--figure">
             <img src="/graphics/bag.svg" alt="nav" />
@@ -40,7 +41,7 @@ export default function Navbar({ navlist, shopingcart }) {
       )}
 
       <section className={cartOpen ? "cartOpen" : "cartClosed"}>
-        <Shopingcart setCartOpen={setCartOpen} cartOpen={cartOpen} />
+        <Shopingcart setAmount={setAmount} />
       </section>
       <section className={hamburgerOpen ? "open nav" : "closed nav"}>
         <NavList

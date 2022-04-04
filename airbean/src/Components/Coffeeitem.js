@@ -1,14 +1,13 @@
 import { useDispatch } from "react-redux";
-import { addItemToOrder } from "../actions/orderactions";
+import { increment } from "../actions/orderactions";
 
 export default function Coffeeitem(props) {
   const dispatch = useDispatch();
   let coffee = props.menuitem;
 
   function handleClick() {
-    console.log("clicked");
     console.log(coffee);
-    dispatch(addItemToOrder(coffee));
+    dispatch(increment(coffee));
   }
 
   console.log(coffee);
@@ -22,15 +21,12 @@ export default function Coffeeitem(props) {
           className="addImg"
         />
       </button>
-
       <section className="coffee_title_desc--section">
-        <section className="coffee_title_dots--section">
-          <h2 className="coffee--title">{coffee.title}</h2>
-          <section className="dots"></section>
-        </section>
-        <h2 className="coffee--desc text-small">{coffee.desc}</h2>
+        <h2 className="coffee--title">{coffee.title}</h2>
+        <section className="dots"></section>
+        <h3 className="coffee--price">{coffee.price} kr</h3>
       </section>
-      <h3 className="coffee--price">{coffee.price} kr</h3>
+      <h2 className="coffee--desc text-small">{coffee.desc}</h2>
     </article>
   );
 }

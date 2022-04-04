@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Coffeeitem from "../Components/Coffeeitem";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 export default function Menu() {
   //  fetching menu, saving menu(data) to a state in useeffect, because I want to render it once before displaying  the menu
@@ -38,6 +39,7 @@ export default function Menu() {
             />
           );
         })}
+      <Footer />
     </section>
   );
 }
