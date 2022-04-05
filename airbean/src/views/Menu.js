@@ -7,6 +7,7 @@ export default function Menu() {
   //  fetching menu, saving menu(data) to a state in useeffect, because I want to render it once before displaying  the menu
 
   const [menu, setMenu] = useState(null);
+
   useEffect(() => {
     const fetchmenu = async () => {
       let response = await fetch(
@@ -17,13 +18,13 @@ export default function Menu() {
       data.forEach((element) => {
         element.amount = 1;
       });
-      console.log(data);
+      // console.log(data);
       setMenu(data);
     };
     fetchmenu();
   }, []);
 
-  console.log(menu);
+  // console.log(menu);
 
   return (
     <section className="Menu--section">

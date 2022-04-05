@@ -3,6 +3,8 @@ export default function NavList({ setHamburgerOpen, hamburgerOpen }) {
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
+
+  // content for hamburgermenu
   return (
     <ul className="navlist--ul">
       <li>
