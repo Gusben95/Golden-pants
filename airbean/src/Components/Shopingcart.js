@@ -51,6 +51,7 @@ export default function ShopingCart(props) {
           "no items in cart"
         )}
       </div>
+      <button className="takemyMoney">Take my money!</button>
     </section>
   );
 }

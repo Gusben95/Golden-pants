@@ -1,16 +1,18 @@
 import { useDispatch } from "react-redux";
 import { increment } from "../actions/orderactions";
 
+// each item in menulist
 export default function Coffeeitem(props) {
   const dispatch = useDispatch();
   let coffee = props.menuitem;
 
   function handleClick() {
-    console.log(coffee);
+    // console.log(coffee);
+    // whn clicked, add to carten
     dispatch(increment(coffee));
   }
 
-  console.log(coffee);
+  // console.log(coffee);
   return (
     <article className="coffee--section">
       <button className="btn" onClick={handleClick}>
