@@ -1,3 +1,4 @@
+//  setting initialstate beacuse when reload we want to start on whatever that is in localstorage
 let item = localStorage.getItem("cart");
 const itemParsed = JSON.parse(item);
 
