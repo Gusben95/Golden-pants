@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
+
 import CartList from "./CartList";
 export default function ShopingCart() {
   //  get order data from reduxstore
@@ -15,14 +15,39 @@ export default function ShopingCart() {
   // sum it up with reduce
 
   const initTotalValue = 0;
-  const totalsum = totalPriceList?.reduce(
+  let totalsum = totalPriceList?.reduce(
     (previousValue, currentValue) => previousValue + currentValue,
     initTotalValue
   );
 
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(order));
-  }, [order]);
+  // filter out obj with amount < 0
+
+  let list = order?.filter((obj) => obj.amount > 0);
+  // Then we save to localstorage
+
+  localStorage.setItem("cart", JSON.stringify(list));
+  console.log(list);
+
+  let a = false;
+  let b = false;
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].id === 1) {
+      a = true;
+      console.log("we have bryggkaffe");
+    } else if (list[i].id === 7) {
+      b = true;
+      console.log("we have kaka");
+    }
+  }
+  console.log(a);
+  console.log(b);
+
+  let testPasses = false;
+  if (a === true && b === true) {
+    testPasses = true;
+    console.log("we passed the test");
+  } else console.log("test failesd");
+  console.log(testPasses);
 
   let item = localStorage.getItem("cart");
   const itemParsed = JSON.parse(item);
@@ -32,6 +57,7 @@ export default function ShopingCart() {
   let displayOrder = itemParsed?.map((item, index) => {
     return <CartList item={item} key={index} />;
   });
+
   return (
     <section className="cart--section">
       <h1> Order</h1>
