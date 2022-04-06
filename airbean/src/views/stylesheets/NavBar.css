@@ -1,0 +1,11 @@
+#navlist--ul{
+        /* font-family: 'PT Serif', serif; */
+    width: 375px;
+    height: 667px;
+    background-color: #2f2926;
+    font-size: 32px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
