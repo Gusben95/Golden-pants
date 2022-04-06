@@ -22,12 +22,12 @@ export default function Navbar({ navlist, shopingcart }) {
   });
 
   // map out all amount-data from each item into one list
-  let amountList = order.map((obj) => {
+  let amountList = order?.map((obj) => {
     return obj.amount;
   });
   // sum amount-data-list to get the total amount-value
   const initValue = 0;
-  const sum = amountList.reduce(
+  const sum = amountList?.reduce(
     (previousValue, currentValue) => previousValue + currentValue,
     initValue
   );

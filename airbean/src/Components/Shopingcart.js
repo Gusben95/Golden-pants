@@ -9,13 +9,13 @@ export default function ShopingCart() {
 
   // get data from redux store and get an array with amount ? price so we have total sum of each coffee item
 
-  let totalPriceList = order.map((obj) => {
+  let totalPriceList = order?.map((obj) => {
     return obj.amount * obj.price;
   });
   // sum it up with reduce
 
   const initTotalValue = 0;
-  const totalsum = totalPriceList.reduce(
+  const totalsum = totalPriceList?.reduce(
     (previousValue, currentValue) => previousValue + currentValue,
     initTotalValue
   );
