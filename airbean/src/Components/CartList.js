@@ -13,7 +13,6 @@ export default function CartList(props) {
     dispatch(increment(item));
   }
   // decrease amount of coffee
-
   function handleminus() {
     dispatch(decrement(item));
   }
