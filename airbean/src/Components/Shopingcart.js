@@ -46,6 +46,7 @@ export default function ShopingCart() {
   if (a === true && b === true) {
     testPasses = true;
     console.log("we passed the test");
+    totalsum = totalsum - 39;
   } else console.log("test failesd");
   console.log(testPasses);
 
