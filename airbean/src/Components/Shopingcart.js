@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 import CartList from "./CartList";
 export default function ShopingCart() {
   //  get order data from reduxstore
@@ -19,9 +20,16 @@ export default function ShopingCart() {
     initTotalValue
   );
 
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(order));
+  }, [order]);
+
+  let item = localStorage.getItem("cart");
+  const itemParsed = JSON.parse(item);
+
   // map data and return each item and pass into element
 
-  let displayOrder = order?.map((item, index) => {
+  let displayOrder = itemParsed?.map((item, index) => {
     return <CartList item={item} key={index} />;
   });
   return (
@@ -30,18 +38,15 @@ export default function ShopingCart() {
       {displayOrder}
       <div>
         {/* if we have item in our list diplay otherwise show text */}
-        {order.length ? (
-          <section className="total--info">
-            <p className="item--total">Total</p>
-            <div className="item--dots"></div>
-            {/* pass in the total sum from items in cart */}
-            <p className="item--sum">{totalsum ? totalsum : 0}kr</p>
-            <p className="item--ink">ink moms + drönarleverans</p>
-          </section>
-        ) : (
-          "no items in cart"
-        )}
+        <section className="total--info">
+          <p className="item--total">Total</p>
+          <div className="item--dots"></div>
+          {/* pass in the total sum from items in cart */}
+          <p className="item--sum">{totalsum ? totalsum : 0}kr</p>
+          <p className="item--ink">ink moms + drönarleverans</p>
+        </section>
       </div>
+
       <button className="takemyMoney">Take my money!</button>
     </section>
   );
