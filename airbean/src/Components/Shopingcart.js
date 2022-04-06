@@ -20,7 +20,7 @@ export default function ShopingCart() {
   );
 
   // map data and return each item and pass into element
-
+  
   let displayOrder = order?.map((item, index) => {
     return <CartList item={item} key={index} />;
   });
