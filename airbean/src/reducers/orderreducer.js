@@ -3,8 +3,8 @@ let item = localStorage.getItem("cart");
 let itemParsed = JSON.parse(item);
 console.log(itemParsed);
 if (!itemParsed) {
-  itemParsed = [];
-}
+   itemParsed = [];
+ }
 
 console.log(itemParsed);
 const initialState = {

@@ -30,6 +30,7 @@ export default function ShopingCart() {
     initTotalValue
   );
 
+
   // filter out obj with amount < 0
 
   let list = order?.filter((obj) => obj.amount > 0);
