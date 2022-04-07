@@ -1,0 +1,30 @@
+/*   ****************** Status   ******************  */
+.ordernummer{
+    /* font-family: Work Sans; */
+    color: #ffffff;
+    size: 16px;
+    text-align: center;
+    /* top: 62px; */
+  }
+  .orderStatusContainer{
+    background-color: #E5674E;
+    height: 100%;
+  }
+  .orderStatusContainer > button{
+    width: 184px;
+    height: 55px;
+    left: 98px;
+    top: 530px;
+    background: #FFFFFF;
+    border-radius: 50px;
+  }
+  .orderStatusContainer > h3{
+  /* font-family: PT serif; */
+  font-weight: 700 bold;
+  font-size: 36px;
+  text-align: center;
+  top: 62px;
+  }
+  .orderStatusContainer > p{
+    top: 62px;
+    }

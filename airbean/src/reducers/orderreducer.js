@@ -6,7 +6,7 @@ if (!itemParsed) {
    itemParsed = [];
  }
 
-// console.log(itemParsed);
+console.log(itemParsed);
 const initialState = {
   order: itemParsed,
 };

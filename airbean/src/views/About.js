@@ -1,8 +1,10 @@
 import Navbar from "../Components/Navbar";
-
+import "../views/stylesheets/About.css"
+import footer from "../assets/graphics/graphics-footer.svg"
+import eva from "../assets/graphics/eva-cortado.jpg"
 export default function About() {
   return (
-    <section>
+    <section id="aboutContainer">
       <Navbar navlist={true} shopingcart={false} />
       <h1>Vårt kaffe</h1>
 
@@ -40,15 +42,15 @@ export default function About() {
         </p>
       </div>
 
-      <div className="owner">
-        <img src="/graphics/eva-cortado.jpg" alt="Owner of Company" />
+      <div id="owner">
+        <img src={eva} alt="Owner of Company" />
         <h3>Eva Cortado</h3>
         <p>VD & Grundare</p>
       </div>
 
       <footer>
-        <div className="container">
-          <img src="/graphics/graphics-footer.svg" alt="footer" />
+        <div id="container">
+          <img src={footer} alt="footer" />
         </div>
       </footer>
     </section>
