@@ -9,13 +9,13 @@ function Landing() {
     const navigate = useNavigate();
 
     function navigateToMenu() {
-        navigate('/')
+        navigate('/menu')
     }
     return (
-        <section id="landingContainer" onClick = {navigateToMenu}>
-            <img src={ landing } alt="landing main " id="mainLanding" onClick={ navigateToMenu }/>
-            <img src={ left }    alt=" landing left " id="leftLanding"onClick={ navigateToMenu }/>
-            <img src={ right }   alt=" landing right" id="rightLanding" onClick={ navigateToMenu }/>
+        <section className="landingContainer" onClick = {navigateToMenu}>
+            <img src={ landing } alt="landing main " className="mainLanding" onClick={ navigateToMenu }/>
+            <img src={ left }    alt=" landing left " className="leftLanding"onClick={ navigateToMenu }/>
+            <img src={ right }   alt=" landing right" className="rightLanding" onClick={ navigateToMenu }/>
         </section>
     )
 }

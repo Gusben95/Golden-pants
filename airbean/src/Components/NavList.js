@@ -9,7 +9,7 @@ export default function NavList({ setHamburgerOpen, hamburgerOpen }) {
   return (
     <ul id="navlist--ul">
       <li>
-        <Link to={"/"} onClick={toggleHamburger}>
+        <Link to={"/menu"} onClick={toggleHamburger}>
           Menu
         </Link>
         <div className="line" />

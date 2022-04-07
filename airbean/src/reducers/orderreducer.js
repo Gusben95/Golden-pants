@@ -1,11 +1,15 @@
 //  setting initialstate beacuse when reload we want to start on whatever that is in localstorage
 let item = localStorage.getItem("cart");
 let itemParsed = JSON.parse(item);
+
 console.log(itemParsed);
 if (!itemParsed) {
    itemParsed = [];
  }
-
+ //Added to avoid bug on pagereload
+ const empty = {
+  order: []
+};
 console.log(itemParsed);
 const initialState = {
   order: itemParsed,
@@ -74,7 +78,7 @@ const orderreducer = (state = initialState, action) => {
       };
       // rensa köpet när man köpt
       case "RESET":
-      return  initialState; 
+      return   empty; 
     default:
       return state;
   }

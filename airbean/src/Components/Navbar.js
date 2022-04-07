@@ -4,23 +4,23 @@ import Shopingcart from "./Shopingcart";
 import NavList from "./NavList";
 import "../views/stylesheets/NavBar.css"
 import bag from "../assets/graphics/bag.svg";
-import close from "../assets/graphics/close.svg"
-import open from "../assets/graphics/navicon.svg"
+// import close from "../assets/graphics/close.svg"
+// import open from "../assets/graphics/navicon.svg"
 // navbar takes 2 prop that determens if it should contain navlist or shopingcart(true or false)
 export default function Navbar({ navlist, shopingcart }) {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
 
   // toggle -> maybe could be improved if  we have one function instead and call diffrent items to toggle
-  let icon = 0
+//   let icon = 0
 
-  if (hamburgerOpen === true) {
-     icon = close;
-  }
-else{
-  console.log(icon, "close")
-  icon = open;
-}
+//   if (hamburgerOpen === true) {
+//      icon = close;
+//   }
+// else{
+  
+//   icon = open;
+// }
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
@@ -55,7 +55,8 @@ else{
            
             <div
               className={hamburgerOpen ?  "openBurger" : "closedBurger"}>
-              <img id="navImg"src={icon}></img>
+              {/* <img id="navImg"src={icon}></img> */}
+
               </div>   
             </div>
           </div>

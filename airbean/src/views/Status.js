@@ -20,7 +20,7 @@ function Status() {
   }, []);
 
   function backTomenu() {
-    navigate("/");
+    navigate("/menu");
   }
 
   // Gör att sidan inte kan nås om något inte är beställt ****
