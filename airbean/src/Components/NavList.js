@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../views/stylesheets/NavBar.css"
 export default function NavList({ setHamburgerOpen, hamburgerOpen }) {
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
@@ -6,7 +7,7 @@ export default function NavList({ setHamburgerOpen, hamburgerOpen }) {
 
   // content for hamburgermenu
   return (
-    <ul className="navlist--ul">
+    <ul id="navlist--ul">
       <li>
         <Link to={"/"} onClick={toggleHamburger}>
           Menu
