@@ -72,6 +72,9 @@ const orderreducer = (state = initialState, action) => {
         ...state,
         order: [...state.order, action.payload],
       };
+      // rensa köpet när man köpt
+      case "RESET":
+      return  initialState; 
     default:
       return state;
   }

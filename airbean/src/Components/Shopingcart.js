@@ -1,7 +1,17 @@
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import {reset} from "../actions/orderactions"
 import CartList from "./CartList";
+import "../views/stylesheets/shopingcart.css";
+
+
 export default function ShopingCart() {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  function toStatus(){
+    dispatch(reset());
+    navigate("/Status");
+      };
   //  get order data from reduxstore
   const order = useSelector((state) => {
     return state.order;
@@ -61,8 +71,10 @@ export default function ShopingCart() {
 
   return (
     <section className="cart--section">
-      <h1> Order</h1>
+      <div class="orderContainer">
+      <h1 id="order"> Order</h1>
       {displayOrder}
+      </div>
       <div>
         {/* if we have item in our list diplay otherwise show text */}
         <section className="total--info">
@@ -74,7 +86,7 @@ export default function ShopingCart() {
         </section>
       </div>
 
-      <button className="takemyMoney">Take my money!</button>
+      <button className="takemyMoney" onClick={toStatus}>Take my money!</button>
     </section>
   );
 }

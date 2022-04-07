@@ -9,7 +9,7 @@
     border-radius: 50px;
 }
 
-h1{
+#Errormessage{
     position: absolute;
     left: 45px;
     top: 100px;
@@ -17,7 +17,7 @@ h1{
 
 
 
-section{
+#ErrorSection{
     background-color:#38846D ;
 }
 

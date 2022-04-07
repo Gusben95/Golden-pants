@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { increment } from "../actions/orderactions";
-
+import add from "../assets/graphics/add.svg"
 // each item in menulist
 export default function Coffeeitem(props) {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ export default function Coffeeitem(props) {
     <article className="coffee--section">
       <button className="btn" onClick={handleClick}>
         <img
-          src="/graphics/add.svg"
+          src={add}
           alt="add"
           width="20px"
           className="addImg"

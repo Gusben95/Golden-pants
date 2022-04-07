@@ -21,7 +21,7 @@ function Status(){
 navigate("/");
   };
 
-
+// Gör att sidan inte kan nås om något inte är beställt **** 
 //skriv ut värdet i dataObjektet "eta.eta och eta.orderNr"
   return(
   <div class="orderStatusContainer">
@@ -31,7 +31,6 @@ navigate("/");
     <h3> Din beställning är påväg </h3>
     <p>{eta.eta} minuter </p> <br></br>  
     <button onClick={backTomenu}> Ok, Cool! </button>
-  
   </div>
   ); 
 };

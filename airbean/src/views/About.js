@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section id="aboutContainer">
       <Navbar navlist={true} shopingcart={false} />
-      <h1>Vårt kaffe</h1>
+      <h1 class="kaffe">Vårt kaffe</h1>
 
       <div className="paragraphs">
         <p className="brodtxt">

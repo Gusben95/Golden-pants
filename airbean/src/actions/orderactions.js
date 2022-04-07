@@ -14,4 +14,12 @@ const decrement = (item) => {
   };
 };
 
-export { increment, decrement };
+
+const reset = () =>{
+  return{
+    type: "RESET"
+  }
+} 
+
+
+export { increment, decrement, reset };

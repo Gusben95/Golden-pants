@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Coffeeitem from "../Components/Coffeeitem";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import "../views/stylesheets/Menu.css"
+//import header from "../assets/graphics/graphics-header.svg"
 
 export default function Menu() {
   //  fetching menu, saving menu(data) to a state in useeffect, because I want to render it once before displaying  the menu
@@ -28,6 +30,7 @@ export default function Menu() {
 
   return (
     <section className="Menu--section">
+   
       <Navbar navlist={true} shopingcart={true} />;
       <h1 className="menu--title">Menu</h1>
       {menu &&

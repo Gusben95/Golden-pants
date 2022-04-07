@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import Shopingcart from "./Shopingcart";
 import NavList from "./NavList";
+import "../views/stylesheets/NavBar.css"
+import bag from "../assets/graphics/bag.svg";
 // navbar takes 2 prop that determens if it should contain navlist or shopingcart(true or false)
 export default function Navbar({ navlist, shopingcart }) {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -53,7 +55,7 @@ export default function Navbar({ navlist, shopingcart }) {
             <p>{sum}</p>
           </section>
           <figure className="bag--figure">
-            <img src="/graphics/bag.svg" alt="nav" />
+            <img src={bag} alt="nav"/>
           </figure>
         </div>
       )}

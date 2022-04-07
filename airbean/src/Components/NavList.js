@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../views/stylesheets/NavBar.css"
+import "../views/stylesheets/navlist.css"
 export default function NavList({ setHamburgerOpen, hamburgerOpen }) {
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
