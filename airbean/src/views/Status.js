@@ -22,7 +22,6 @@ function Status() {
   function backTomenu() {
     navigate("/");
   }
-
   // Gör att sidan inte kan nås om något inte är beställt ****
   //skriv ut värdet i dataObjektet "eta.eta och eta.orderNr"
   return (
@@ -41,3 +40,4 @@ function Status() {
 export default Status;
 
 // https://my-json-server.typicode.com/zocom-christoffer-wallenberg/airbean/order
+
