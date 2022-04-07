@@ -47,7 +47,7 @@ export default function ShopingCart() {
     testPasses = true;
     console.log("we passed the test");
     totalsum = totalsum - 39;
-  } else console.log("test failesd");
+  } else console.log("test failed");
   console.log(testPasses);
 
   let item = localStorage.getItem("cart");
