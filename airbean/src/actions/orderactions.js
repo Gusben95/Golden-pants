@@ -1,25 +1,24 @@
+const addItemToOrder = (item) => {
+  console.log(item);
+  return {
+    type: "ADD_ITEM",
+    payload: item,
+  };
+};
 const increment = (item) => {
   console.log("hshshs");
-  console.log(item);
+  console.log(item.item);
   return {
     type: "INCREMENT",
     payload: item,
   };
 };
 
-const decrement = (item) => {
+const decrement = (data) => {
   return {
     type: "DECREMENT",
-    payload: item,
+    payload: data,
   };
 };
 
-
-const reset = () =>{
-  return{
-    type: "RESET"
-  }
-} 
-
-
-export { increment, decrement, reset };
+export { addItemToOrder, increment, decrement };
