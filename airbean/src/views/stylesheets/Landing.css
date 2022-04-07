@@ -1,0 +1,21 @@
+#landingContainer{
+    position: absolute;
+    background-color:#38846D ;
+    height: 100%;
+    width: 100%;
+}
+#leftLanding {
+    left: -32px;
+    top: -156px;
+    position: relative; 
+ }
+#rightLanding {
+    position: relative;
+    left: 32px;
+    top: -153px;
+  }
+  #mainLanding {
+    position: relative;
+    top: 250px;
+  }
+

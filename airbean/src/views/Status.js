@@ -1,6 +1,7 @@
-import { useEffect, useState, useRef } from "react";
+import "./stylesheets/Status.css";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import drone from "../Assets/graphics/drone.svg";
+import drone from "../assets/graphics/drone.svg";
 function Status() {
   const [eta, setEta] = useState("");
   const navigate = useNavigate();

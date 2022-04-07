@@ -1,0 +1,24 @@
+navlist--ul {
+    list-style: none;
+    margin-top: 50%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navlist--ul li {
+    padding-top: 15px;
+  }
+  
+  .line {
+    max-width: 40px;
+    border-bottom: 1px solid grey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+  .navlist--ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2em;
+  }
