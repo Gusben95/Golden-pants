@@ -9,21 +9,20 @@
     z-index: 3;
   }
   .openBurger {
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-    justify-items: center;
-    width: 40px;
-    height: 40px; */
-
-    /* background-image: url("../../assets/graphics/close.svg"); */
+    background-image: url("../../assets/graphics/close.svg");
     position: absolute;
-    z-index: 5;    
-    background-color: rgb(255 255 255 / 78%); 
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-color: rgb(255 255 255 / 78%);
     
   }
   .closedBurger {
-    /* background-image: url("../../assets/graphics/navicon.svg"); */
+    background-image: url("../../assets/graphics/navicon.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20px;
@@ -44,15 +43,15 @@
   }
 
 .cartAmount--section {
-    position: absolute;
-    top: -30%;
-    left: 60%;
-    background-color: red;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    border-radius: 50%;
-    color: white;
+  position: absolute;
+  top: -10%;
+  left: 65%;
+  background-color: #E5674E;
+  height: 22px;
+  width: 22px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
   }
   
   .cartAmount--section p {
@@ -88,25 +87,14 @@
   .closed {
     display: none;
   }
-  #iconWrapper > .openBurger 
+  /* #iconWrapper > .openBurger 
   {
        height:50px;
        width: 50px;
        border-radius: 50%;
        background-color:white;
-  }
-  .cartAmount--section {
-    position: absolute;
-    top: -30%;
-    left: 45%;
-    background-color: red;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    border-radius: 50%;
-    color: white;
-  }
-  
+  } */
+ 
   .cartAmount--section p {
     margin: 3px;
     font-weight: bold;}

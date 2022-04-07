@@ -10,7 +10,7 @@ export default function Error() {
       };
   return (
     <section id="ErrorSection">
-      <h1 id="Errormessage">OOPS CANT FIND PAGE!</h1>
+      <h1 id="Errormessage">OOPS COULDN'T FIND PAGE!</h1>
             <img src={ left }    alt=" landing left " id="leftLanding"/>
             <img src={ right }   alt=" landing right" id="rightLanding" />
       <button id = "takeMeBack" onClick={backTomenu}> TAKE ME BACK </button>

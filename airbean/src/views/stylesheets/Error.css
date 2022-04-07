@@ -3,16 +3,16 @@
     width: 184px;
     height: 55px;
     left: 98px;
-    top: 530px;
+    
     background: #b8aaaa;
-    top: 250px;
+    top: 410px;
     border-radius: 50px;
 }
 
 #Errormessage{
     position: absolute;
-    left: 45px;
-    top: 100px;
+    left: 27px;
+    top: 250px;
 }
 
 
@@ -23,15 +23,15 @@
 
 
 #leftLanding {
-    left: -32px;
-    top: -156px;
+    left: -60px;
+    top: -2px;
     position: relative; 
  }
 #rightLanding {
     
     position: relative;
-    left: 32px;
-    top: -153px;
+    left: 70px;
+    top: -2px;
   }
   
 
