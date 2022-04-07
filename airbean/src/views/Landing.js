@@ -1,18 +1,21 @@
-import landing from "../Assets/graphics/airbean-landing.svg"
-import graphicleft from "../Assets/graphics/intro-graphic-left.svg"
-import graphicright from "../Assets/graphics/intro-graphic-right.svg"
-export default function Landing() {
-  return (
-    <section>
-
-      <img src={landing}      alt="landing"/>
-      <img src={graphicleft}  alt="graphic left"/>
-      <img src={graphicright} alt="graphic right"/>
-      
-      <h1>AIR BEAN</h1>
-      
-      <h3>DRONEDELIVERED COFFEE</h3>
-
-    </section>
-  );
+import "./stylesheets/Landing.css"
+import '../App.css'
+import landing from '../assets/graphics/airbean-landing.svg';
+import left from '../assets/graphics/intro-graphic-left.svg';
+import right from '../assets/graphics/intro-graphic-right.svg';
+import { useNavigate } from 'react-router-dom'
+function Landing() {
+    const navigate = useNavigate();
+    function navigateToMenu() {
+        navigate('/')
+    }
+    return (
+        <section id="landingContainer" onClick = {navigateToMenu}>
+            <img src={ landing } alt="landing main " id="mainLanding" onClick={ navigateToMenu }/>
+            <img src={ left }    alt=" landing left " id="leftLanding"onClick={ navigateToMenu }/>
+            <img src={ right }   alt=" landing right" id="rightLanding" onClick={ navigateToMenu }/>
+        </section>
+    )
 }
+
+export default Landing;
