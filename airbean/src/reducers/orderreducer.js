@@ -2,9 +2,9 @@
 let item = localStorage.getItem("cart");
 let itemParsed = JSON.parse(item);
 console.log(itemParsed);
-// // if (itemParsed === null) {
-// //   itemParsed = [];
-// // }
+if (!itemParsed) {
+   itemParsed = [];
+ }
 
 // console.log(itemParsed);
 const initialState = {
