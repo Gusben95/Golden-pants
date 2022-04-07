@@ -2,12 +2,13 @@
   width: 100%;
   min-height: 10%;
   max-height: 10%;
-  position: absolute;
-  bottom: 0;
-  background-image: url("../public/graphics/graphics-footer.svg");
+  background-image: url("../../assets/graphics/graphics-footer.svg");
+  background-color: #f3e4e1;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   z-index: 0;
+  position: relative;
+  bottom: 0;
 }
 /* cartList */
 .cartItem--li {
@@ -29,7 +30,7 @@
 
 .value--section {
   font-size: 1em;
-  margin: 5px 0px 5px 0px;  
+  margin: 5px 0px 5px 0px;
 }
 
 .item--info {
